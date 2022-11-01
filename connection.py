@@ -1,5 +1,4 @@
 import os
-
 import psycopg2
 
 connection = psycopg2.connect(
