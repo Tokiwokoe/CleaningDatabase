@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>860</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Курсовая работа БД Мамчур ПИ-20а</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(3, 125, 107)</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>861</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Print_cleaning">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>580</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>П</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Print_customer">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>630</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>П</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Print_service">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>880</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>П</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Print_cl_sv">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>730</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>П</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Print_dist">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>780</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>П</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Print_rate">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>830</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>П</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Print_prop">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>930</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>П</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Print_order">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>680</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>П</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_8_8">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>600</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>левое внешнее соединение</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_8_9">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>640</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>правое внешнее соединение</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_8_10">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>680</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>запрос на запросе по принципу левого соединения </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>510</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-size: 16px;
+font: &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>симметричное внутреннее соединение без условия </string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_8_7">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>550</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>380</y>
+      <width>381</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-size: 32px;
+font: &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Выполнить запрос</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_8_1">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>470</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_8_4">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>470</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_8_6">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>550</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_8_5">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>550</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>429</y>
+      <width>381</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-size: 16px;
+font: &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>симметричное внутреннее соединение с условием</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_8_3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>470</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_8_2">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>470</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_9_1">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>720</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>итоговый запрос без условия </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_9_3">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>800</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>итоговый запрос с условием на группы</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_9_2">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>760</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>итоговый запрос с условием на данные</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_9_4">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>840</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>итоговый запрос с условием на данные и на группы </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_9_6">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>920</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>запрос с подзапросом </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Q_3_9_5">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>880</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>запрос на запросе по принципу итогового запроса </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_client">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>630</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>Д</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_order">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>680</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>Д</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>411</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;
+font: &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Вы работаете в режиме администратора!</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>580</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;
+font: &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Химчистки</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>630</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;
+font: &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Заказчики</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>680</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;
+font: &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Заказы</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>730</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;
+font: &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Услуги химчистки</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>780</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;
+font: &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Районы</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>880</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;
+font: &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Услуги</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>930</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;
+font: &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Тип собственности</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>830</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;
+font: &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Тарифы</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_cleaning">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>580</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>Д</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_cl_sv">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>730</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>Д</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_dist">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>780</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>Д</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_rate">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>830</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>Д</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_service">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>880</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>Д</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_prop">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>930</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>Д</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="print">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>450</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>П</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>510</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>Д</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>450</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;
+font: &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>- просмотреть</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>510</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;
+font: &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>- добавить</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="print_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>450</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>У</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>450</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;
+font: &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>- удалить</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_cleaning">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>580</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>У</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_customer">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>630</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>У</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_order">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>680</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>У</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_cl_sv">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>730</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>У</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_dist">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>780</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>У</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_service">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>880</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>У</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_prop">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>930</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>У</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_rate">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>830</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>У</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="searchButton">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>510</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font: &quot;Yu Gothic UI Semibold&quot;;
+background-color: rgb(245, 245, 245)</string>
+    </property>
+    <property name="text">
+     <string>Поиск</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>860</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
