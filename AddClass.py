@@ -2,6 +2,7 @@ import datetime
 
 from PyQt5.QtWidgets import QDialog
 
+import AddCleaning
 import AddClient
 import AddOrder
 import connection
@@ -94,9 +95,10 @@ class AddOrder(QDialog, AddOrder.Ui_Dialog):
             self.error.setText('Проверьте корректность заполнения полей!')
 
 
-class AddCleaning(QDialog):
+class AddCleaning(QDialog, AddCleaning.Ui_Dialog):
     def __init__(self):
         super(AddCleaning, self).__init__()
+        self.setupUi(self)
 
 
 class AddCleaningservice(QDialog):
