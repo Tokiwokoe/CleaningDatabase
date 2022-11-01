@@ -99,6 +99,35 @@ class AddCleaning(QDialog, AddCleaning.Ui_Dialog):
     def __init__(self):
         super(AddCleaning, self).__init__()
         self.setupUi(self)
+        self.OKbutton.clicked.connect(self.correct_data)
+        self.cursor = connection.connection.cursor()
+        query = 'SELECT id, district_name FROM "District"'
+        self.cursor.execute(query)
+        for t in self.cursor.fetchall():
+            self.dist_id.addItem(str(t))
+        query = 'SELECT id, property_type FROM "Property"'
+        self.cursor.execute(query)
+        for t in self.cursor.fetchall():
+            self.prop_id.addItem(str(t))
+
+    def correct_data(self):
+        cleaning = self.cleaning.text()
+        year_opened = self.year_opened.text()
+        phone = self.phone.text()
+        dist = self.dist.currentText().replace('(', '').replace(')', '').replace(' \'', '\'').split(',')
+        dist_id = str(dist[0])
+        prop = self.prop.currentText().replace('(', '').replace(')', '').replace(' \'', '\'').split(',')
+        prop_id = str(prop[0])
+        if len(cleaning) > 0 and len(year_opened) > 0 and len(phone) > 0:
+            if len(cleaning) < 129 and 1900 < year_opened < 2023:
+                if year_opened.isalnum() and phone.isalnum():
+                    try:
+                        query = 'SELECT id FROM "Cleaning" ORDER BY id DESC LIMIT 1'
+                        self.cursor.execute(query)
+                        self.id = self.cursor.fetchone()
+
+
+
 
 
 class AddCleaningservice(QDialog):
