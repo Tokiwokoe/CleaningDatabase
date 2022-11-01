@@ -369,12 +369,6 @@ class PrintTable(QMainWindow):
         self.to_print_table()
 
 
-class ClientWindow(PrintTable, Window.Ui_MainWindow):
-    def __init__(self):
-        super(ClientWindow, self).__init__()
-        self.setupUi(self)
-        self.setFixedSize(860, 1000)
-
     def to_add_client(self):
         client = AddClient()
         client.exec_()
@@ -382,6 +376,39 @@ class ClientWindow(PrintTable, Window.Ui_MainWindow):
     def to_add_order(self):
         order = AddOrder()
         order.exec_()
+
+
+class ClientWindow(PrintTable, Window.Ui_MainWindow):
+    def __init__(self):
+        super(ClientWindow, self).__init__()
+        self.setupUi(self)
+        self.setFixedSize(860, 1000)
+        self.Print_cleaning.clicked.connect(self.to_print_cleaning)
+        self.Print_customer.clicked.connect(self.to_print_customer)
+        self.Print_service.clicked.connect(self.to_print_service)
+        self.Print_cl_sv.clicked.connect(self.to_print_cl_sv)
+        self.Print_dist.clicked.connect(self.to_print_dist)
+        self.Print_prop.clicked.connect(self.to_print_prop)
+        self.Print_rate.clicked.connect(self.to_print_rate)
+        self.Print_order.clicked.connect(self.to_print_order)
+        self.Q_3_8_1.clicked.connect(self.to_print_Q_3_8_1)
+        self.Q_3_8_2.clicked.connect(self.to_print_Q_3_8_2)
+        self.Q_3_8_3.clicked.connect(self.to_print_Q_3_8_3)
+        self.Q_3_8_4.clicked.connect(self.to_print_Q_3_8_4)
+        self.Q_3_8_5.clicked.connect(self.to_print_Q_3_8_5)
+        self.Q_3_8_6.clicked.connect(self.to_print_Q_3_8_6)
+        self.Q_3_8_7.clicked.connect(self.to_print_Q_3_8_7)
+        self.Q_3_8_8.clicked.connect(self.to_print_Q_3_8_8)
+        self.Q_3_8_9.clicked.connect(self.to_print_Q_3_8_9)
+        self.Q_3_8_10.clicked.connect(self.to_print_Q_3_8_10)
+        self.Q_3_9_1.clicked.connect(self.to_print_Q_3_9_1)
+        self.Q_3_9_2.clicked.connect(self.to_print_Q_3_9_2)
+        self.Q_3_9_3.clicked.connect(self.to_print_Q_3_9_3)
+        self.Q_3_9_4.clicked.connect(self.to_print_Q_3_9_4)
+        self.Q_3_9_5.clicked.connect(self.to_print_Q_3_9_5)
+        self.Q_3_9_6.clicked.connect(self.to_print_Q_3_9_6)
+        self.add_client.clicked.connect(self.to_add_client)
+        self.add_order.clicked.connect(self.to_add_order)
 
 
 class AdminWindow(PrintTable, AdminWindow.Ui_MainWindow):
@@ -415,14 +442,6 @@ class AdminWindow(PrintTable, AdminWindow.Ui_MainWindow):
         self.Q_3_9_6.clicked.connect(self.to_print_Q_3_9_6)
         self.add_client.clicked.connect(self.to_add_client)
         self.add_order.clicked.connect(self.to_add_order)
-
-    def to_add_client(self):
-        client = AddClient()
-        client.exec_()
-
-    def to_add_order(self):
-        order = AddOrder()
-        order.exec_()
 
 
 class AuthWindow(QDialog, LoginScreen.Ui_Auth):
