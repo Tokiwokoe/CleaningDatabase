@@ -59,7 +59,6 @@ class AddOrder(QDialog, AddOrder.Ui_Dialog):
         self.cursor.execute(query)
         for t in self.cursor.fetchall():
             self.rate_id.addItem(str(t))
-        self.OKbutton.clicked.connect(self.correct_data)
 
     def correct_data(self):
         customer = self.customer_id.text()
@@ -142,6 +141,9 @@ class AddCleaningservice(QDialog):
     def __init__(self):
         super(AddCleaningservice, self).__init__()
         self.OKbutton.clicked.connect(self.correct_data)
+
+    def correct_data(self):
+        pass
 
 
 class AddDistrict(QDialog, AddDist.Ui_Dialog):
