@@ -223,13 +223,13 @@ class Ui_MainWindow(object):
 "background-color: rgb(245, 245, 245)")
         self.Q_3_9_5.setObjectName("Q_3_9_5")
         self.add_client = QtWidgets.QPushButton(self.centralwidget)
-        self.add_client.setGeometry(QtCore.QRect(260, 630, 31, 23))
+        self.add_client.setGeometry(QtCore.QRect(280, 630, 31, 23))
         self.add_client.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.add_client.setObjectName("add_client")
         self.add_order = QtWidgets.QPushButton(self.centralwidget)
-        self.add_order.setGeometry(QtCore.QRect(260, 680, 31, 23))
+        self.add_order.setGeometry(QtCore.QRect(280, 680, 31, 23))
         self.add_order.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
@@ -361,37 +361,37 @@ class Ui_MainWindow(object):
         self.label_13.setAlignment(QtCore.Qt.AlignCenter)
         self.label_13.setObjectName("label_13")
         self.add_cleaning = QtWidgets.QPushButton(self.centralwidget)
-        self.add_cleaning.setGeometry(QtCore.QRect(260, 580, 31, 23))
+        self.add_cleaning.setGeometry(QtCore.QRect(280, 580, 31, 23))
         self.add_cleaning.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.add_cleaning.setObjectName("add_cleaning")
         self.add_cl_sv = QtWidgets.QPushButton(self.centralwidget)
-        self.add_cl_sv.setGeometry(QtCore.QRect(260, 730, 31, 23))
+        self.add_cl_sv.setGeometry(QtCore.QRect(280, 730, 31, 23))
         self.add_cl_sv.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.add_cl_sv.setObjectName("add_cl_sv")
         self.add_dist = QtWidgets.QPushButton(self.centralwidget)
-        self.add_dist.setGeometry(QtCore.QRect(260, 780, 31, 23))
+        self.add_dist.setGeometry(QtCore.QRect(280, 780, 31, 23))
         self.add_dist.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.add_dist.setObjectName("add_dist")
         self.add_rate = QtWidgets.QPushButton(self.centralwidget)
-        self.add_rate.setGeometry(QtCore.QRect(260, 830, 31, 23))
+        self.add_rate.setGeometry(QtCore.QRect(280, 830, 31, 23))
         self.add_rate.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.add_rate.setObjectName("add_rate")
         self.add_service = QtWidgets.QPushButton(self.centralwidget)
-        self.add_service.setGeometry(QtCore.QRect(260, 880, 31, 23))
+        self.add_service.setGeometry(QtCore.QRect(280, 880, 31, 23))
         self.add_service.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.add_service.setObjectName("add_service")
         self.add_prop = QtWidgets.QPushButton(self.centralwidget)
-        self.add_prop.setGeometry(QtCore.QRect(260, 930, 31, 23))
+        self.add_prop.setGeometry(QtCore.QRect(280, 930, 31, 23))
         self.add_prop.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
@@ -443,7 +443,7 @@ class Ui_MainWindow(object):
 "background-color: rgb(245, 245, 245)")
         self.print_2.setObjectName("print_2")
         self.label_16 = QtWidgets.QLabel(self.centralwidget)
-        self.label_16.setGeometry(QtCore.QRect(300, 450, 141, 31))
+        self.label_16.setGeometry(QtCore.QRect(300, 450, 101, 31))
         font = QtGui.QFont()
         font.setPointSize(-1)
         font.setBold(False)
@@ -457,121 +457,59 @@ class Ui_MainWindow(object):
         self.label_16.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_16.setObjectName("label_16")
         self.delete_cleaning = QtWidgets.QPushButton(self.centralwidget)
-        self.delete_cleaning.setGeometry(QtCore.QRect(310, 580, 31, 23))
+        self.delete_cleaning.setGeometry(QtCore.QRect(350, 580, 31, 23))
         self.delete_cleaning.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.delete_cleaning.setObjectName("delete_cleaning")
         self.delete_customer = QtWidgets.QPushButton(self.centralwidget)
-        self.delete_customer.setGeometry(QtCore.QRect(310, 630, 31, 23))
+        self.delete_customer.setGeometry(QtCore.QRect(350, 630, 31, 23))
         self.delete_customer.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.delete_customer.setObjectName("delete_customer")
         self.delete_order = QtWidgets.QPushButton(self.centralwidget)
-        self.delete_order.setGeometry(QtCore.QRect(310, 680, 31, 23))
+        self.delete_order.setGeometry(QtCore.QRect(350, 680, 31, 23))
         self.delete_order.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.delete_order.setObjectName("delete_order")
         self.delete_cl_sv = QtWidgets.QPushButton(self.centralwidget)
-        self.delete_cl_sv.setGeometry(QtCore.QRect(310, 730, 31, 23))
+        self.delete_cl_sv.setGeometry(QtCore.QRect(350, 730, 31, 23))
         self.delete_cl_sv.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.delete_cl_sv.setObjectName("delete_cl_sv")
         self.delete_dist = QtWidgets.QPushButton(self.centralwidget)
-        self.delete_dist.setGeometry(QtCore.QRect(310, 780, 31, 23))
+        self.delete_dist.setGeometry(QtCore.QRect(350, 780, 31, 23))
         self.delete_dist.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.delete_dist.setObjectName("delete_dist")
         self.delete_service = QtWidgets.QPushButton(self.centralwidget)
-        self.delete_service.setGeometry(QtCore.QRect(310, 880, 31, 23))
+        self.delete_service.setGeometry(QtCore.QRect(350, 880, 31, 23))
         self.delete_service.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.delete_service.setObjectName("delete_service")
         self.delete_prop = QtWidgets.QPushButton(self.centralwidget)
-        self.delete_prop.setGeometry(QtCore.QRect(310, 930, 31, 23))
+        self.delete_prop.setGeometry(QtCore.QRect(350, 930, 31, 23))
         self.delete_prop.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.delete_prop.setObjectName("delete_prop")
         self.delete_rate = QtWidgets.QPushButton(self.centralwidget)
-        self.delete_rate.setGeometry(QtCore.QRect(310, 830, 31, 23))
+        self.delete_rate.setGeometry(QtCore.QRect(350, 830, 31, 23))
         self.delete_rate.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.delete_rate.setObjectName("delete_rate")
-        self.label_17 = QtWidgets.QLabel(self.centralwidget)
-        self.label_17.setGeometry(QtCore.QRect(300, 510, 141, 31))
-        font = QtGui.QFont()
-        font.setPointSize(-1)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setUnderline(False)
-        font.setWeight(50)
-        self.label_17.setFont(font)
-        self.label_17.setStyleSheet("color: rgb(255, 255, 255);\n"
-"font-size: 20px;\n"
-"font: \"Arial Black\";")
-        self.label_17.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label_17.setObjectName("label_17")
-        self.print_3 = QtWidgets.QPushButton(self.centralwidget)
-        self.print_3.setGeometry(QtCore.QRect(240, 510, 41, 31))
-        self.print_3.setStyleSheet("font-size: 16px;\n"
+        self.searchButton = QtWidgets.QPushButton(self.centralwidget)
+        self.searchButton.setGeometry(QtCore.QRect(240, 510, 161, 31))
+        self.searchButton.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
-        self.print_3.setObjectName("print_3")
-        self.change_cleaning = QtWidgets.QPushButton(self.centralwidget)
-        self.change_cleaning.setGeometry(QtCore.QRect(360, 580, 31, 23))
-        self.change_cleaning.setStyleSheet("font-size: 16px;\n"
-"font: \"Yu Gothic UI Semibold\";\n"
-"background-color: rgb(245, 245, 245)")
-        self.change_cleaning.setObjectName("change_cleaning")
-        self.change_client = QtWidgets.QPushButton(self.centralwidget)
-        self.change_client.setGeometry(QtCore.QRect(360, 630, 31, 23))
-        self.change_client.setStyleSheet("font-size: 16px;\n"
-"font: \"Yu Gothic UI Semibold\";\n"
-"background-color: rgb(245, 245, 245)")
-        self.change_client.setObjectName("change_client")
-        self.change_order = QtWidgets.QPushButton(self.centralwidget)
-        self.change_order.setGeometry(QtCore.QRect(360, 680, 31, 23))
-        self.change_order.setStyleSheet("font-size: 16px;\n"
-"font: \"Yu Gothic UI Semibold\";\n"
-"background-color: rgb(245, 245, 245)")
-        self.change_order.setObjectName("change_order")
-        self.change_cl_sv = QtWidgets.QPushButton(self.centralwidget)
-        self.change_cl_sv.setGeometry(QtCore.QRect(360, 730, 31, 23))
-        self.change_cl_sv.setStyleSheet("font-size: 16px;\n"
-"font: \"Yu Gothic UI Semibold\";\n"
-"background-color: rgb(245, 245, 245)")
-        self.change_cl_sv.setObjectName("change_cl_sv")
-        self.change_dist = QtWidgets.QPushButton(self.centralwidget)
-        self.change_dist.setGeometry(QtCore.QRect(360, 780, 31, 23))
-        self.change_dist.setStyleSheet("font-size: 16px;\n"
-"font: \"Yu Gothic UI Semibold\";\n"
-"background-color: rgb(245, 245, 245)")
-        self.change_dist.setObjectName("change_dist")
-        self.change_prop = QtWidgets.QPushButton(self.centralwidget)
-        self.change_prop.setGeometry(QtCore.QRect(360, 930, 31, 23))
-        self.change_prop.setStyleSheet("font-size: 16px;\n"
-"font: \"Yu Gothic UI Semibold\";\n"
-"background-color: rgb(245, 245, 245)")
-        self.change_prop.setObjectName("change_prop")
-        self.change_rate = QtWidgets.QPushButton(self.centralwidget)
-        self.change_rate.setGeometry(QtCore.QRect(360, 830, 31, 23))
-        self.change_rate.setStyleSheet("font-size: 16px;\n"
-"font: \"Yu Gothic UI Semibold\";\n"
-"background-color: rgb(245, 245, 245)")
-        self.change_rate.setObjectName("change_rate")
-        self.change_service = QtWidgets.QPushButton(self.centralwidget)
-        self.change_service.setGeometry(QtCore.QRect(360, 880, 31, 23))
-        self.change_service.setStyleSheet("font-size: 16px;\n"
-"font: \"Yu Gothic UI Semibold\";\n"
-"background-color: rgb(245, 245, 245)")
-        self.change_service.setObjectName("change_service")
+        self.searchButton.setObjectName("searchButton")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 860, 21))
@@ -645,16 +583,7 @@ class Ui_MainWindow(object):
         self.delete_service.setText(_translate("MainWindow", "У"))
         self.delete_prop.setText(_translate("MainWindow", "У"))
         self.delete_rate.setText(_translate("MainWindow", "У"))
-        self.label_17.setText(_translate("MainWindow", "- изменить"))
-        self.print_3.setText(_translate("MainWindow", "И"))
-        self.change_cleaning.setText(_translate("MainWindow", "И"))
-        self.change_client.setText(_translate("MainWindow", "И"))
-        self.change_order.setText(_translate("MainWindow", "И"))
-        self.change_cl_sv.setText(_translate("MainWindow", "И"))
-        self.change_dist.setText(_translate("MainWindow", "И"))
-        self.change_prop.setText(_translate("MainWindow", "И"))
-        self.change_rate.setText(_translate("MainWindow", "И"))
-        self.change_service.setText(_translate("MainWindow", "И"))
+        self.searchButton.setText(_translate("MainWindow", "Поиск"))
 
 
 if __name__ == "__main__":
