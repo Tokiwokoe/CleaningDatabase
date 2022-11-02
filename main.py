@@ -1,8 +1,6 @@
 import sys
-import LoginScreen
-import Window
 import connection
-import AdminWindow
+from UiClass import LoginScreen, Window, AdminWindow
 from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog, QTableWidgetItem
 from AddClass import (
     AddCleaning,

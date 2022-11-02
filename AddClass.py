@@ -1,13 +1,6 @@
 import datetime
-
 from PyQt5.QtWidgets import QDialog
-
-import AddProp
-import AddDist
-import AddRate
-import AddCleaning
-import AddClient
-import AddOrder
+from UiClass import AddProp, AddDist, AddRate, AddCleaning, AddClient, AddOrder
 import connection
 
 
