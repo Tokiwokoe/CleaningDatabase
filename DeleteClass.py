@@ -19,6 +19,7 @@ class DeleteMessage(QDialog, DeleteMessage.Ui_Dialog):
         try:
             query = f'DELETE FROM {table} WHERE id = {id}'
             self.cursor.execute(query)
+            connection.connection.commit()
             self.error.setText('Удалено!')
         except Exception:
             self.error.setText('Ошибка!')

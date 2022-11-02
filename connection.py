@@ -7,4 +7,3 @@ connection = psycopg2.connect(
     user=os.environ.get('USER'),
     password=os.environ.get('PASSWORD')
 )
-
