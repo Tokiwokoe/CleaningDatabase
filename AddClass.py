@@ -1,6 +1,6 @@
 import datetime
 from PyQt5.QtWidgets import QDialog
-from UiClass import AddProp, AddDist, AddRate, AddCleaning, AddClient, AddOrder
+from UiClass import AddProp, AddDist, AddRate, AddCleaning, AddClient, AddOrder, AddClSv, AddService
 import connection
 
 
@@ -137,13 +137,42 @@ class AddCleaning(QDialog, AddCleaning.Ui_Dialog):
             self.error.setText('Проверьте корректность заполнения полей!')
 
 
-class AddCleaningservice(QDialog):
+class AddCleaningservice(QDialog, AddClSv.Ui_Dialog):
     def __init__(self):
         super(AddCleaningservice, self).__init__()
+        self.setFixedSize(560, 150)
+        self.setupUi(self)
         self.OKbutton.clicked.connect(self.correct_data)
+        self.cursor = connection.connection.cursor()
+        query = 'SELECT "Cleaning".id, cleaning_name, district_name FROM "Cleaning" ' \
+                'LEFT JOIN "District" ON "Cleaning".district_id = "District".id'
+        self.cursor.execute(query)
+        for t in self.cursor.fetchall():
+            self.cleaning.addItem(str(t))
+        query = 'SELECT id, service FROM "Service"'
+        self.cursor.execute(query)
+        for t in self.cursor.fetchall():
+            self.service.addItem(str(t))
 
     def correct_data(self):
-        pass
+        price = self.price.text().replace(' ', '')
+        cleaning = self.cleaning.currentText().replace('(', '').replace(')', '').replace(' \'', '\'').split(',')
+        service = self. service.currentText().replace('(', '').replace(')', '').replace(' \'', '\'').split(',')
+        cleaning_id = str(cleaning[0])
+        service_id = str(service[0])
+        if price.isalnum():
+            try:
+                query = 'SELECT id FROM "Cleaningservice" ORDER BY id DESC LIMIT 1'
+                self.cursor.execute(query)
+                self.id = self.cursor.fetchone()
+                query = f"INSERT INTO \"Cleaningservice\" VALUES({int(self.id[0]) + 1}, '{price}', {cleaning_id}, {service_id})"
+                self.cursor.execute(query)
+                connection.connection.commit()
+                self.error.setText('Успешно добавлено')
+            except Exception:
+                self.error.setText('Что-то пошло не так :(')
+        else:
+            self.error.setText('Проверьте корректность заполнения полей!')
 
 
 class AddDistrict(QDialog, AddDist.Ui_Dialog):
@@ -176,10 +205,10 @@ class AddRate(QDialog, AddRate.Ui_Dialog):
         super(AddRate, self).__init__()
         self.setupUi(self)
         self.setFixedSize(560, 150)
+        self.cursor = connection.connection.cursor()
         self.OKbutton.clicked.connect(self.correct_data)
 
     def correct_data(self):
-        self.cursor = connection.connection.cursor()
         rate = self.rate.text()
         query = 'SELECT id FROM "Rate" ORDER BY id DESC LIMIT 1'
         self.cursor.execute(query)
@@ -196,10 +225,30 @@ class AddRate(QDialog, AddRate.Ui_Dialog):
             self.error.setText('Проверьте корректность заполнения полей!')
 
 
-class AddService(QDialog):
+class AddService(QDialog, AddService.Ui_Dialog):
     def __init__(self):
         super(AddService, self).__init__()
+        self.setupUi(self)
+        self.setFixedSize(560, 150)
+        self.cursor = connection.connection.cursor()
         self.OKbutton.clicked.connect(self.correct_data)
+
+    def correct_data(self):
+        service = self.service.text()
+        deadline = self.deadline.text()
+        query = 'SELECT id FROM "Service" ORDER BY id DESC LIMIT 1'
+        self.cursor.execute(query)
+        self.id = self.cursor.fetchone()
+        if 0 < len(service) < 129 and deadline.isalnum() and int(deadline) > 0:
+            try:
+                query = f"INSERT INTO \"Service\" VALUES ({int(self.id[0]) + 1}, '{service}', '{deadline}')"
+                self.cursor.execute(query)
+                connection.connection.commit()
+                self.error.setText('Успешно добавлено')
+            except Exception:
+                self.error.setText('Что-то пошло не так :(')
+        else:
+            self.error.setText('Проверьте корректность заполнения полей!')
 
 
 class AddPropery(QDialog, AddProp.Ui_Dialog):

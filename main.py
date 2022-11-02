@@ -444,6 +444,8 @@ class AdminWindow(PrintTable, AdminWindow.Ui_MainWindow):
         self.add_dist.clicked.connect(self.to_add_dist)
         self.add_rate.clicked.connect(self.to_add_rate)
         self.add_prop.clicked.connect(self.to_add_prop)
+        self.add_cl_sv.clicked.connect(self.to_add_cl_sv)
+        self.add_service.clicked.connect(self.to_add_service)
 
     def to_add_cleaning(self):
         cleaning = AddCleaning()
@@ -460,6 +462,14 @@ class AdminWindow(PrintTable, AdminWindow.Ui_MainWindow):
     def to_add_prop(self):
         prop = AddPropery()
         prop.exec_()
+
+    def to_add_cl_sv(self):
+        cl_sv = AddCleaningservice()
+        cl_sv.exec_()
+
+    def to_add_service(self):
+        service = AddService()
+        service.exec_()
 
 
 class AuthWindow(QDialog, LoginScreen.Ui_Auth):
