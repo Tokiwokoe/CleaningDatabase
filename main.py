@@ -442,6 +442,26 @@ class AdminWindow(PrintTable, AdminWindow.Ui_MainWindow):
         self.Q_3_9_6.clicked.connect(self.to_print_Q_3_9_6)
         self.add_client.clicked.connect(self.to_add_client)
         self.add_order.clicked.connect(self.to_add_order)
+        self.add_cleaning.clicked.connect(self.to_add_cleaning)
+        self.add_dist.clicked.connect(self.to_add_dist)
+        self.add_rate.clicked.connect(self.to_add_rate)
+        self.add_prop.clicked.connect(self.to_add_prop)
+
+    def to_add_cleaning(self):
+        cleaning = AddCleaning()
+        cleaning.exec_()
+
+    def to_add_dist(self):
+        dist = AddDistrict()
+        dist.exec_()
+
+    def to_add_rate(self):
+        rate = AddRate()
+        rate.exec_()
+
+    def to_add_prop(self):
+        prop = AddPropery()
+        prop.exec_()
 
 
 class AuthWindow(QDialog, LoginScreen.Ui_Auth):

@@ -2,6 +2,9 @@ import datetime
 
 from PyQt5.QtWidgets import QDialog
 
+import AddProp
+import AddDist
+import AddRate
 import AddCleaning
 import AddClient
 import AddOrder
@@ -12,6 +15,7 @@ class AddClient(QDialog, AddClient.Ui_Dialog):
     def __init__(self):
         super(AddClient, self).__init__()
         self.setupUi(self)
+        self.setFixedSize(740, 140)
         self.OKbutton.clicked.connect(self.correct_data)
 
     def correct_data(self):
@@ -51,6 +55,7 @@ class AddOrder(QDialog, AddOrder.Ui_Dialog):
     def __init__(self):
         super(AddOrder, self).__init__()
         self.setupUi(self)
+        self.setFixedSize(740, 140)
         self.OKbutton.clicked.connect(self.correct_data)
         self.cursor = connection.connection.cursor()
         query = 'SELECT "Cleaningservice".id, cleaning_name, district_name, service, price FROM "Cleaningservice" LEFT JOIN "Cleaning" ON "Cleaningservice".cleaning_id = "Cleaning".id LEFT JOIN "Service" ON "Cleaningservice".service_id = "Service".id LEFT JOIN "District" ON "District".id = "Cleaning".district_id'
@@ -99,35 +104,45 @@ class AddCleaning(QDialog, AddCleaning.Ui_Dialog):
     def __init__(self):
         super(AddCleaning, self).__init__()
         self.setupUi(self)
+        self.setFixedSize(740, 140)
         self.OKbutton.clicked.connect(self.correct_data)
         self.cursor = connection.connection.cursor()
         query = 'SELECT id, district_name FROM "District"'
         self.cursor.execute(query)
         for t in self.cursor.fetchall():
-            self.dist_id.addItem(str(t))
+            self.dist.addItem(str(t))
         query = 'SELECT id, property_type FROM "Property"'
         self.cursor.execute(query)
         for t in self.cursor.fetchall():
-            self.prop_id.addItem(str(t))
+            self.prop.addItem(str(t))
 
     def correct_data(self):
         cleaning = self.cleaning.text()
         year_opened = self.year_opened.text()
-        phone = self.phone.text()
+        raw_phone = self.phone.text()
+        new_phone = raw_phone.replace('+', '').replace('-', '')
         dist = self.dist.currentText().replace('(', '').replace(')', '').replace(' \'', '\'').split(',')
         dist_id = str(dist[0])
         prop = self.prop.currentText().replace('(', '').replace(')', '').replace(' \'', '\'').split(',')
         prop_id = str(prop[0])
-        if len(cleaning) > 0 and len(year_opened) > 0 and len(phone) > 0:
-            if len(cleaning) < 129 and 1900 < year_opened < 2023:
-                if year_opened.isalnum() and phone.isalnum():
-                    try:
-                        query = 'SELECT id FROM "Cleaning" ORDER BY id DESC LIMIT 1'
-                        self.cursor.execute(query)
-                        self.id = self.cursor.fetchone()
-
-
-
+        if 0 < len(cleaning) < 129 and len(new_phone) > 0 and 1900 < int(year_opened) < 2023 and year_opened.isalnum() and new_phone.isalnum():
+            try:
+                if len(new_phone) == 12:
+                    phone = ''
+                    phone = '+' + phone + new_phone[0:2] + '(' + new_phone[2:5] + ')' + new_phone[5:8] + '-' + new_phone[8:10] + '-' + new_phone[10:12]
+                else:
+                    phone = new_phone
+                query = 'SELECT id FROM "Cleaning" ORDER BY id DESC LIMIT 1'
+                self.cursor.execute(query)
+                self.id = self.cursor.fetchone()
+                query = f"INSERT INTO \"Cleaning\" VALUES({int(self.id[0]) + 1}, '{cleaning}', '{year_opened}', '{phone}', {dist_id}, {prop_id})"
+                self.cursor.execute(query)
+                connection.connection.commit()
+                self.error.setText('Успешно добавлено')
+            except Exception:
+                self.error.setText('Что-то пошло не так :(')
+        else:
+            self.error.setText('Проверьте корректность заполнения полей!')
 
 
 class AddCleaningservice(QDialog):
@@ -135,14 +150,18 @@ class AddCleaningservice(QDialog):
         super(AddCleaningservice, self).__init__()
 
 
-class AddDistrict(QDialog):
+class AddDistrict(QDialog, AddDist.Ui_Dialog):
     def __init__(self):
         super(AddDistrict, self).__init__()
+        self.setupUi(self)
+        self.setFixedSize(560, 150)
 
 
-class AddRate(QDialog):
+class AddRate(QDialog, AddRate.Ui_Dialog):
     def __init__(self):
         super(AddRate, self).__init__()
+        self.setupUi(self)
+        self.setFixedSize(560, 150)
 
 
 class AddService(QDialog):
@@ -150,6 +169,8 @@ class AddService(QDialog):
         super(AddService, self).__init__()
 
 
-class AddPropery(QDialog):
+class AddPropery(QDialog, AddProp.Ui_Dialog):
     def __init__(self):
         super(AddPropery, self).__init__()
+        self.setupUi(self)
+        self.setFixedSize(560, 150)

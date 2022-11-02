@@ -17,35 +17,35 @@ class Ui_Dialog(object):
         Dialog.resize(740, 140)
         Dialog.setStyleSheet("background-color: rgb(3, 125, 107)")
         self.cleaning = QtWidgets.QLineEdit(Dialog)
-        self.cleaning.setGeometry(QtCore.QRect(10, 40, 181, 20))
+        self.cleaning.setGeometry(QtCore.QRect(10, 40, 151, 20))
         self.cleaning.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.cleaning.setText("")
         self.cleaning.setObjectName("cleaning")
         self.label_3 = QtWidgets.QLabel(Dialog)
-        self.label_3.setGeometry(QtCore.QRect(10, 10, 181, 20))
+        self.label_3.setGeometry(QtCore.QRect(10, 10, 151, 20))
         self.label_3.setStyleSheet("color: rgb(255, 255, 255);\n"
 "font-size: 16px;\n"
 "font: \"Arial Black\";")
         self.label_3.setAlignment(QtCore.Qt.AlignCenter)
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(Dialog)
-        self.label_4.setGeometry(QtCore.QRect(210, 10, 111, 20))
+        self.label_4.setGeometry(QtCore.QRect(180, 10, 101, 20))
         self.label_4.setStyleSheet("color: rgb(255, 255, 255);\n"
 "font-size: 16px;\n"
 "font: \"Arial Black\";")
         self.label_4.setAlignment(QtCore.Qt.AlignCenter)
         self.label_4.setObjectName("label_4")
         self.label_5 = QtWidgets.QLabel(Dialog)
-        self.label_5.setGeometry(QtCore.QRect(340, 10, 101, 20))
+        self.label_5.setGeometry(QtCore.QRect(300, 10, 101, 20))
         self.label_5.setStyleSheet("color: rgb(255, 255, 255);\n"
 "font-size: 16px;\n"
 "font: \"Arial Black\";")
         self.label_5.setAlignment(QtCore.Qt.AlignCenter)
         self.label_5.setObjectName("label_5")
         self.label_6 = QtWidgets.QLabel(Dialog)
-        self.label_6.setGeometry(QtCore.QRect(460, 10, 111, 20))
+        self.label_6.setGeometry(QtCore.QRect(420, 10, 151, 20))
         self.label_6.setStyleSheet("color: rgb(255, 255, 255);\n"
 "font-size: 16px;\n"
 "font: \"Arial Black\";")
@@ -73,21 +73,21 @@ class Ui_Dialog(object):
         self.error.setAlignment(QtCore.Qt.AlignCenter)
         self.error.setObjectName("error")
         self.year_opened = QtWidgets.QLineEdit(Dialog)
-        self.year_opened.setGeometry(QtCore.QRect(210, 40, 111, 20))
+        self.year_opened.setGeometry(QtCore.QRect(180, 40, 101, 20))
         self.year_opened.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.year_opened.setText("")
         self.year_opened.setObjectName("year_opened")
         self.phone = QtWidgets.QLineEdit(Dialog)
-        self.phone.setGeometry(QtCore.QRect(340, 40, 101, 20))
+        self.phone.setGeometry(QtCore.QRect(300, 40, 101, 20))
         self.phone.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.phone.setText("")
         self.phone.setObjectName("phone")
         self.dist = QtWidgets.QComboBox(Dialog)
-        self.dist.setGeometry(QtCore.QRect(460, 40, 111, 22))
+        self.dist.setGeometry(QtCore.QRect(420, 40, 151, 22))
         self.dist.setStyleSheet("font-size: 16px;\n"
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
