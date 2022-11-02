@@ -141,6 +141,7 @@ class AddCleaning(QDialog, AddCleaning.Ui_Dialog):
 class AddCleaningservice(QDialog):
     def __init__(self):
         super(AddCleaningservice, self).__init__()
+        self.OKbutton.clicked.connect(self.correct_data)
 
 
 class AddDistrict(QDialog, AddDist.Ui_Dialog):
@@ -148,6 +149,24 @@ class AddDistrict(QDialog, AddDist.Ui_Dialog):
         super(AddDistrict, self).__init__()
         self.setupUi(self)
         self.setFixedSize(560, 150)
+        self.OKbutton.clicked.connect(self.correct_data)
+
+    def correct_data(self):
+        self.cursor = connection.connection.cursor()
+        dist = self.dist.text()
+        query = 'SELECT id FROM "District" ORDER BY id DESC LIMIT 1'
+        self.cursor.execute(query)
+        self.id = self.cursor.fetchone()
+        if 0 < len(dist) < 30:
+            try:
+                query = f"INSERT INTO \"District\" VALUES ({int(self.id[0])+1}, '{dist}')"
+                self.cursor.execute(query)
+                connection.connection.commit()
+                self.error.setText('Успешно добавлено')
+            except Exception:
+                self.error.setText('Что-то пошло не так :(')
+        else:
+            self.error.setText('Проверьте корректность заполнения полей!')
 
 
 class AddRate(QDialog, AddRate.Ui_Dialog):
@@ -155,11 +174,30 @@ class AddRate(QDialog, AddRate.Ui_Dialog):
         super(AddRate, self).__init__()
         self.setupUi(self)
         self.setFixedSize(560, 150)
+        self.OKbutton.clicked.connect(self.correct_data)
+
+    def correct_data(self):
+        self.cursor = connection.connection.cursor()
+        rate = self.rate.text()
+        query = 'SELECT id FROM "Rate" ORDER BY id DESC LIMIT 1'
+        self.cursor.execute(query)
+        self.id = self.cursor.fetchone()
+        if 0 < len(rate) < 30:
+            try:
+                query = f"INSERT INTO \"Rate\" VALUES ({int(self.id[0])+1}, '{rate}')"
+                self.cursor.execute(query)
+                connection.connection.commit()
+                self.error.setText('Успешно добавлено')
+            except Exception:
+                self.error.setText('Что-то пошло не так :(')
+        else:
+            self.error.setText('Проверьте корректность заполнения полей!')
 
 
 class AddService(QDialog):
     def __init__(self):
         super(AddService, self).__init__()
+        self.OKbutton.clicked.connect(self.correct_data)
 
 
 class AddPropery(QDialog, AddProp.Ui_Dialog):
@@ -167,3 +205,21 @@ class AddPropery(QDialog, AddProp.Ui_Dialog):
         super(AddPropery, self).__init__()
         self.setupUi(self)
         self.setFixedSize(560, 150)
+        self.OKbutton.clicked.connect(self.correct_data)
+
+    def correct_data(self):
+        self.cursor = connection.connection.cursor()
+        prop = self.prop.text()
+        query = 'SELECT id FROM "Property" ORDER BY id DESC LIMIT 1'
+        self.cursor.execute(query)
+        self.id = self.cursor.fetchone()
+        if 0 < len(prop) < 30:
+            try:
+                query = f"INSERT INTO \"Property\" VALUES ({int(self.id[0])+1}, '{prop}')"
+                self.cursor.execute(query)
+                connection.connection.commit()
+                self.error.setText('Успешно добавлено')
+            except Exception:
+                self.error.setText('Что-то пошло не так :(')
+        else:
+            self.error.setText('Проверьте корректность заполнения полей!')
