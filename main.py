@@ -2,6 +2,7 @@ import sys
 import connection
 from UiClass import LoginScreen, Window, AdminWindow
 from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog, QTableWidgetItem
+from DeleteClass import DeleteMessage, DeleteData
 from AddClass import (
     AddCleaning,
     AddCleaningservice,
@@ -11,16 +12,6 @@ from AddClass import (
     AddPropery,
     AddRate,
     AddService
-)
-from DeleteClass import (
-    DeleteCleaning,
-    DeleteCleaningservice,
-    DeleteClient,
-    DeleteDistrict,
-    DeleteOrder,
-    DeletePropery,
-    DeleteRate,
-    DeleteService
 )
 
 
@@ -446,6 +437,7 @@ class AdminWindow(PrintTable, AdminWindow.Ui_MainWindow):
         self.add_prop.clicked.connect(self.to_add_prop)
         self.add_cl_sv.clicked.connect(self.to_add_cl_sv)
         self.add_service.clicked.connect(self.to_add_service)
+        self.DeleteButton.clicked.connect(self.to_delete)
 
     def to_add_cleaning(self):
         cleaning = AddCleaning()
@@ -470,6 +462,10 @@ class AdminWindow(PrintTable, AdminWindow.Ui_MainWindow):
     def to_add_service(self):
         service = AddService()
         service.exec_()
+
+    def to_delete(self):
+        delete = DeleteData()
+        delete.exec_()
 
 
 class AuthWindow(QDialog, LoginScreen.Ui_Auth):

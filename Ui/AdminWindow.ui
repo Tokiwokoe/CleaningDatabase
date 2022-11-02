@@ -41,10 +41,10 @@ background-color: rgb(245, 245, 245)</string>
    <widget class="QPushButton" name="Print_cleaning">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>230</x>
       <y>580</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -59,10 +59,10 @@ background-color: rgb(245, 245, 245)</string>
    <widget class="QPushButton" name="Print_customer">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>230</x>
       <y>630</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -77,10 +77,10 @@ background-color: rgb(245, 245, 245)</string>
    <widget class="QPushButton" name="Print_service">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>230</x>
       <y>880</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -95,10 +95,10 @@ background-color: rgb(245, 245, 245)</string>
    <widget class="QPushButton" name="Print_cl_sv">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>230</x>
       <y>730</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -113,10 +113,10 @@ background-color: rgb(245, 245, 245)</string>
    <widget class="QPushButton" name="Print_dist">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>230</x>
       <y>780</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -131,10 +131,10 @@ background-color: rgb(245, 245, 245)</string>
    <widget class="QPushButton" name="Print_rate">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>230</x>
       <y>830</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -149,10 +149,10 @@ background-color: rgb(245, 245, 245)</string>
    <widget class="QPushButton" name="Print_prop">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>230</x>
       <y>930</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -167,10 +167,10 @@ background-color: rgb(245, 245, 245)</string>
    <widget class="QPushButton" name="Print_order">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>230</x>
       <y>680</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -574,10 +574,10 @@ background-color: rgb(245, 245, 245)</string>
    <widget class="QPushButton" name="add_client">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>330</x>
       <y>630</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -592,10 +592,10 @@ background-color: rgb(245, 245, 245)</string>
    <widget class="QPushButton" name="add_order">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>330</x>
       <y>680</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -643,7 +643,7 @@ font: &quot;Arial Black&quot;;</string>
       <x>10</x>
       <y>580</y>
       <width>181</width>
-      <height>21</height>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
@@ -673,7 +673,7 @@ font: &quot;Arial Black&quot;;</string>
       <x>10</x>
       <y>630</y>
       <width>181</width>
-      <height>21</height>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
@@ -703,7 +703,7 @@ font: &quot;Arial Black&quot;;</string>
       <x>10</x>
       <y>680</y>
       <width>181</width>
-      <height>21</height>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
@@ -733,7 +733,7 @@ font: &quot;Arial Black&quot;;</string>
       <x>10</x>
       <y>730</y>
       <width>181</width>
-      <height>21</height>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
@@ -763,7 +763,7 @@ font: &quot;Arial Black&quot;;</string>
       <x>10</x>
       <y>780</y>
       <width>181</width>
-      <height>21</height>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
@@ -793,7 +793,7 @@ font: &quot;Arial Black&quot;;</string>
       <x>10</x>
       <y>880</y>
       <width>181</width>
-      <height>21</height>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
@@ -823,7 +823,7 @@ font: &quot;Arial Black&quot;;</string>
       <x>10</x>
       <y>930</y>
       <width>181</width>
-      <height>21</height>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
@@ -853,7 +853,7 @@ font: &quot;Arial Black&quot;;</string>
       <x>10</x>
       <y>830</y>
       <width>181</width>
-      <height>21</height>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">
@@ -880,10 +880,10 @@ font: &quot;Arial Black&quot;;</string>
    <widget class="QPushButton" name="add_cleaning">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>330</x>
       <y>580</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -898,10 +898,10 @@ background-color: rgb(245, 245, 245)</string>
    <widget class="QPushButton" name="add_cl_sv">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>330</x>
       <y>730</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -916,10 +916,10 @@ background-color: rgb(245, 245, 245)</string>
    <widget class="QPushButton" name="add_dist">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>330</x>
       <y>780</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -934,10 +934,10 @@ background-color: rgb(245, 245, 245)</string>
    <widget class="QPushButton" name="add_rate">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>330</x>
       <y>830</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -952,10 +952,10 @@ background-color: rgb(245, 245, 245)</string>
    <widget class="QPushButton" name="add_service">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>330</x>
       <y>880</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -970,10 +970,10 @@ background-color: rgb(245, 245, 245)</string>
    <widget class="QPushButton" name="add_prop">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>330</x>
       <y>930</y>
-      <width>31</width>
-      <height>23</height>
+      <width>50</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1081,12 +1081,12 @@ font: &quot;Arial Black&quot;;</string>
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="print_2">
+   <widget class="QPushButton" name="DeleteButton">
     <property name="geometry">
      <rect>
       <x>240</x>
       <y>450</y>
-      <width>41</width>
+      <width>161</width>
       <height>31</height>
      </rect>
     </property>
@@ -1096,181 +1096,7 @@ font: &quot;Yu Gothic UI Semibold&quot;;
 background-color: rgb(245, 245, 245)</string>
     </property>
     <property name="text">
-     <string>У</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_16">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>450</y>
-      <width>101</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>-1</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-      <underline>false</underline>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);
-font-size: 20px;
-font: &quot;Arial Black&quot;;</string>
-    </property>
-    <property name="text">
-     <string>- удалить</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="delete_cleaning">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>580</y>
-      <width>31</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font-size: 16px;
-font: &quot;Yu Gothic UI Semibold&quot;;
-background-color: rgb(245, 245, 245)</string>
-    </property>
-    <property name="text">
-     <string>У</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="delete_customer">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>630</y>
-      <width>31</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font-size: 16px;
-font: &quot;Yu Gothic UI Semibold&quot;;
-background-color: rgb(245, 245, 245)</string>
-    </property>
-    <property name="text">
-     <string>У</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="delete_order">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>680</y>
-      <width>31</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font-size: 16px;
-font: &quot;Yu Gothic UI Semibold&quot;;
-background-color: rgb(245, 245, 245)</string>
-    </property>
-    <property name="text">
-     <string>У</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="delete_cl_sv">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>730</y>
-      <width>31</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font-size: 16px;
-font: &quot;Yu Gothic UI Semibold&quot;;
-background-color: rgb(245, 245, 245)</string>
-    </property>
-    <property name="text">
-     <string>У</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="delete_dist">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>780</y>
-      <width>31</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font-size: 16px;
-font: &quot;Yu Gothic UI Semibold&quot;;
-background-color: rgb(245, 245, 245)</string>
-    </property>
-    <property name="text">
-     <string>У</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="delete_service">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>880</y>
-      <width>31</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font-size: 16px;
-font: &quot;Yu Gothic UI Semibold&quot;;
-background-color: rgb(245, 245, 245)</string>
-    </property>
-    <property name="text">
-     <string>У</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="delete_prop">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>930</y>
-      <width>31</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font-size: 16px;
-font: &quot;Yu Gothic UI Semibold&quot;;
-background-color: rgb(245, 245, 245)</string>
-    </property>
-    <property name="text">
-     <string>У</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="delete_rate">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>830</y>
-      <width>31</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font-size: 16px;
-font: &quot;Yu Gothic UI Semibold&quot;;
-background-color: rgb(245, 245, 245)</string>
-    </property>
-    <property name="text">
-     <string>У</string>
+     <string>Удалить запись</string>
     </property>
    </widget>
    <widget class="QPushButton" name="searchButton">
