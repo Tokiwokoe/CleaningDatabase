@@ -38,7 +38,8 @@ class AddClient(QDialog, AddClient.Ui_Dialog):
                 self.cursor.execute(query)
                 connection.connection.commit()
                 self.error.setText('Успешно добавлено')
-            except Exception:
+            except Exception as err:
+                print(err)
                 self.error.setText('Что-то пошло не так :(')
         else:
             self.error.setText('Проверьте корректность заполнения полей!')
@@ -86,7 +87,8 @@ class AddOrder(QDialog, AddOrder.Ui_Dialog):
                 self.cursor.execute(query)
                 connection.connection.commit()
                 self.error.setText('Успешно добавлено')
-            except Exception:
+            except Exception as err:
+                print(err)
                 self.error.setText('Что-то пошло не так :(')
         else:
             self.error.setText('Проверьте корректность заполнения полей!')
@@ -131,7 +133,8 @@ class AddCleaning(QDialog, AddCleaning.Ui_Dialog):
                 self.cursor.execute(query)
                 connection.connection.commit()
                 self.error.setText('Успешно добавлено')
-            except Exception:
+            except Exception as err:
+                print(err)
                 self.error.setText('Что-то пошло не так :(')
         else:
             self.error.setText('Проверьте корректность заполнения полей!')
@@ -169,7 +172,8 @@ class AddCleaningservice(QDialog, AddClSv.Ui_Dialog):
                 self.cursor.execute(query)
                 connection.connection.commit()
                 self.error.setText('Успешно добавлено')
-            except Exception:
+            except Exception as err:
+                print(err)
                 self.error.setText('Что-то пошло не так :(')
         else:
             self.error.setText('Проверьте корректность заполнения полей!')
@@ -194,7 +198,8 @@ class AddDistrict(QDialog, AddDist.Ui_Dialog):
                 self.cursor.execute(query)
                 connection.connection.commit()
                 self.error.setText('Успешно добавлено')
-            except Exception:
+            except Exception as err:
+                print(err)
                 self.error.setText('Что-то пошло не так :(')
         else:
             self.error.setText('Проверьте корректность заполнения полей!')
@@ -219,7 +224,8 @@ class AddRate(QDialog, AddRate.Ui_Dialog):
                 self.cursor.execute(query)
                 connection.connection.commit()
                 self.error.setText('Успешно добавлено')
-            except Exception:
+            except Exception as err:
+                print(err)
                 self.error.setText('Что-то пошло не так :(')
         else:
             self.error.setText('Проверьте корректность заполнения полей!')
@@ -245,7 +251,8 @@ class AddService(QDialog, AddService.Ui_Dialog):
                 self.cursor.execute(query)
                 connection.connection.commit()
                 self.error.setText('Успешно добавлено')
-            except Exception:
+            except Exception as err:
+                print(err)
                 self.error.setText('Что-то пошло не так :(')
         else:
             self.error.setText('Проверьте корректность заполнения полей!')
@@ -270,7 +277,8 @@ class AddPropery(QDialog, AddProp.Ui_Dialog):
                 self.cursor.execute(query)
                 connection.connection.commit()
                 self.error.setText('Успешно добавлено')
-            except Exception:
+            except Exception as err:
+                print(err)
                 self.error.setText('Что-то пошло не так :(')
         else:
             self.error.setText('Проверьте корректность заполнения полей!')

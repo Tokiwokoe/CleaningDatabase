@@ -442,12 +442,6 @@ class Ui_MainWindow(object):
 "font: \"Yu Gothic UI Semibold\";\n"
 "background-color: rgb(245, 245, 245)")
         self.DeleteButton.setObjectName("DeleteButton")
-        self.searchButton = QtWidgets.QPushButton(self.centralwidget)
-        self.searchButton.setGeometry(QtCore.QRect(240, 510, 161, 31))
-        self.searchButton.setStyleSheet("font-size: 16px;\n"
-"font: \"Yu Gothic UI Semibold\";\n"
-"background-color: rgb(245, 245, 245)")
-        self.searchButton.setObjectName("searchButton")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 860, 21))
@@ -512,7 +506,6 @@ class Ui_MainWindow(object):
         self.label_14.setText(_translate("MainWindow", "- просмотреть"))
         self.label_15.setText(_translate("MainWindow", "- добавить"))
         self.DeleteButton.setText(_translate("MainWindow", "Удалить запись"))
-        self.searchButton.setText(_translate("MainWindow", "Поиск"))
 
 
 if __name__ == "__main__":

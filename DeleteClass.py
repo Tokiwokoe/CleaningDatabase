@@ -21,7 +21,8 @@ class DeleteMessage(QDialog, DeleteMessage.Ui_Dialog):
             self.cursor.execute(query)
             connection.connection.commit()
             self.error.setText('Удалено!')
-        except Exception:
+        except Exception as err:
+            print(err)
             self.error.setText('Ошибка!')
 
     def cancel(self):
